@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>MOUNTAIN STRIKE FIELD</title>
+<style>
+:root{--bg:#10150f;--panel:#192119;--text:#f6f3ea;--muted:#c9c5b8;--orange:#f27700;--orange2:#ffab2f}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--text);font-family:system-ui,-apple-system,"Noto Sans JP","Yu Gothic",sans-serif;line-height:1.7}
+a{color:inherit;text-decoration:none}.wrap{width:min(1100px,calc(100% - 32px));margin:auto}
+header{position:fixed;inset:0 0 auto;z-index:20;background:#0d130fd9;backdrop-filter:blur(8px);border-bottom:1px solid #ffffff17}
+nav{height:68px;display:flex;align-items:center;justify-content:space-between}.brand{font-weight:1000;letter-spacing:.08em}.brand span{color:var(--orange2)}
+.menu{display:flex;gap:18px;font-weight:800;font-size:14px}.btn{display:inline-flex;align-items:center;justify-content:center;min-height:50px;padding:0 22px;background:linear-gradient(135deg,var(--orange2),var(--orange));font-weight:900;border-radius:4px;box-shadow:0 12px 28px #0008}
+.hero{min-height:92svh;display:grid;align-items:center;background:linear-gradient(90deg,#09100be8 0%,#09100bbd 40%,#09100b2e 75%),url("hero.svg") center/cover no-repeat}
+.hero-content{padding:110px 0 90px;max-width:700px}.tag{color:var(--orange2);font-weight:900;letter-spacing:.18em}
+h1{font-size:clamp(44px,8vw,88px);line-height:1.05;margin:.25em 0;letter-spacing:-.04em}.lead{font-size:clamp(17px,2.4vw,22px);color:#eee8d8}
+.actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px}.ghost{background:#121914dd;border:1px solid #ffffff66}
+section{padding:74px 0}.title{font-size:clamp(30px,5vw,46px);margin:0 0 10px}.title:before{content:"";display:inline-block;width:7px;height:.8em;background:var(--orange);margin-right:.35em}
+.sub{color:var(--muted);margin:0 0 30px}.cards{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:-48px;position:relative;z-index:3}
+.card{background:#f1eee5;color:#172017;padding:22px;border-radius:8px;box-shadow:0 16px 36px #0007}.card b{display:block;font-size:18px}.card p{font-size:14px;margin:.5em 0 0;color:#475047}
+.plans{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.plan{background:var(--panel);border:1px solid #ffffff18;border-radius:10px;overflow:hidden}.plan h3{margin:0;padding:16px;text-align:center;background:#40583b}.plan:nth-child(2) h3{background:#7a672d}.plan:nth-child(3) h3{background:#b14d08}.price{font-size:38px;font-weight:1000;text-align:center;padding:22px 10px 8px}.plan ul{padding:0 28px 24px;color:#ddd8ca}
+.gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}.shot{min-height:220px;border-radius:8px;border:1px solid #ffffff1c;background:linear-gradient(#0000,#0008),url("hero.svg") center/cover}.shot:nth-child(2){background-position:30% center}.shot:nth-child(3){background-position:75% center}
+.access{background:#ece8dd;color:#172017}.access-box{display:grid;grid-template-columns:1fr 1fr;gap:24px}.map{min-height:280px;border-radius:10px;background:linear-gradient(135deg,#d7ddcb,#a7b99c);display:grid;place-items:center;font-weight:1000;color:#33452d}
+footer{padding:30px 0;color:#aaa;border-top:1px solid #ffffff18}.note{position:fixed;right:12px;bottom:12px;background:#000c;border:1px solid #ffffff2c;padding:8px 12px;border-radius:99px;font-size:12px}
+@media(max-width:780px){.menu a:not(.btn){display:none}.cards{grid-template-columns:1fr 1fr}.plans,.gallery,.access-box{grid-template-columns:1fr}.hero{min-height:88svh}.card{padding:18px}}
+@media(max-width:480px){.cards{grid-template-columns:1fr}.brand{font-size:14px}.btn{min-height:48px;padding:0 18px}}
+</style>
+</head>
+<body>
+<header><div class="wrap"><nav><div class="brand">MOUNTAIN <span>STRIKE</span> FIELD</div><div class="menu"><a href="#field">フィールド</a><a href="#price">料金</a><a href="#access">アクセス</a><a class="btn" href="#price">予約する</a></div></nav></div></header>
+
+<main>
+<section class="hero">
+  <div class="wrap hero-content">
+    <div class="tag">FOREST SURVIVAL GAME FIELD</div>
+    <h1>山を駆けろ。<br>森が、戦場になる。</h1>
+    <p class="lead">自然の地形を活かした架空のサバイバルゲームフィールド。仲間と一日、本気で遊ぶためのサンプルサイト。</p>
+    <div class="actions"><a class="btn" href="#price">料金を見る</a><a class="btn ghost" href="#field">フィールド紹介</a></div>
+  </div>
+</section>
+
+<div class="wrap cards">
+  <article class="card"><div>⛰️</div><b>本格山岳フィールド</b><p>起伏と森林を活かしたダイナミックなエリア。</p></article>
+  <article class="card"><div>🔰</div><b>初心者も安心</b><p>スタッフ説明とレンタル装備を用意。</p></article>
+  <article class="card"><div>🎯</div><b>多彩なゲーム</b><p>フラッグ戦や拠点防衛戦を楽しめる。</p></article>
+  <article class="card"><div>🅿️</div><b>駐車場あり</b><p>グループでの来場にも対応。</p></article>
+</div>
+
+<section id="field">
+  <div class="wrap">
+    <h2 class="title">フィールド紹介</h2>
+    <p class="sub">森、斜面、バリケードを組み合わせた架空のフィールド。</p>
+    <div class="gallery"><div class="shot"></div><div class="shot"></div><div class="shot"></div></div>
+  </div>
+</section>
+
+<section id="price">
+  <div class="wrap">
+    <h2 class="title">料金プラン</h2>
+    <p class="sub">料金・営業時間はすべてサンプル。</p>
+    <div class="plans">
+      <article class="plan"><h3>1日利用</h3><div class="price">¥3,500</div><ul><li>9:00〜17:00</li><li>フィールド利用</li><li>セーフティ利用</li></ul></article>
+      <article class="plan"><h3>半日利用</h3><div class="price">¥2,000</div><ul><li>午前または午後</li><li>フィールド利用</li><li>初心者説明</li></ul></article>
+      <article class="plan"><h3>貸切プラン</h3><div class="price">¥35,000〜</div><ul><li>最大40名</li><li>チーム・イベント向け</li><li>内容は応相談</li></ul></article>
+    </div>
+  </div>
+</section>
+
+<section id="access" class="access">
+  <div class="wrap access-box">
+    <div><h2 class="title">アクセス</h2><p>〒999-0123 長野県○○村1234-5</p><p>○○ICから車で約25分<br>無料駐車場あり</p><p><b>※これは公開テスト用の架空サイト。</b></p></div>
+    <div class="map">MOUNTAIN STRIKE FIELD<br>MAP SAMPLE</div>
+  </div>
+</section>
+</main>
+
+<footer><div class="wrap">© 2026 MOUNTAIN STRIKE FIELD — SAMPLE SITE</div></footer>
+<div class="note">サンプルサイト</div>
+</body>
+</html>
