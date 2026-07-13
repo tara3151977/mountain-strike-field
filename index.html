@@ -2,158 +2,74 @@
 <html lang="ja">
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-  <meta name="theme-color" content="#080b09">
-  <meta name="description" content="SOUTHWOODS TACTICAL FIELD サンプルサイト">
-  <title>SOUTHWOODS TACTICAL FIELD</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#07100a">
+  <meta name="description" content="MOUNTAIN STRIKE FIELD — 大自然を舞台にした山岳サバイバルゲームフィールドのコンセプトサイト">
+  <title>MOUNTAIN STRIKE FIELD</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800;900&family=Noto+Sans+JP:wght@500;700;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
   <script src="script.js" defer></script>
 </head>
 <body>
+  <div class="noise" aria-hidden="true"></div>
   <header class="site-header">
-    <div class="nav-shell">
-      <a class="brand" href="#top" aria-label="トップへ">
-        <span class="brand-mark" aria-hidden="true">▲</span>
-        <span class="brand-copy">
-          <strong>SOUTHWOODS</strong>
-          <small>TACTICAL FIELD</small>
-        </span>
-      </a>
-
-      <nav class="desktop-nav" aria-label="メインメニュー">
-        <a href="#field">FIELD</a>
-        <a href="#system">SYSTEM</a>
-        <a href="#news">NEWS</a>
-        <a href="#reserve">RESERVE</a>
-      </nav>
-
-      <button class="menu-button" type="button" aria-label="メニューを開く" aria-expanded="false">
-        <span></span><span></span><span></span>
-      </button>
-    </div>
-
-    <nav class="mobile-nav" aria-label="スマホメニュー">
-      <a href="#field">FIELD</a>
-      <a href="#system">SYSTEM</a>
-      <a href="#news">NEWS</a>
-      <a href="#reserve">RESERVE</a>
-    </nav>
+    <a class="brand" href="#top" aria-label="トップへ"><span class="brand-emblem">M</span><span><b>MOUNTAIN</b><b>STRIKE FIELD</b></span></a>
+    <nav class="desktop-nav" aria-label="メインメニュー"><a href="#concept">CONCEPT</a><a href="#field">FIELD</a><a href="#plan">PLAN</a><a href="#gallery">GALLERY</a><a class="nav-cta" href="#contact">予約・問い合わせ</a></nav>
+    <button class="menu-button" type="button" aria-label="メニューを開く" aria-expanded="false"><span></span><span></span><span></span></button>
+    <nav class="mobile-nav" aria-label="スマホメニュー"><a href="#concept">CONCEPT</a><a href="#field">FIELD</a><a href="#plan">PLAN</a><a href="#gallery">GALLERY</a><a href="#contact">CONTACT</a></nav>
   </header>
 
   <main>
     <section class="hero" id="top">
-      <div class="hero-shade"></div>
-      <div class="hero-shell">
-        <div class="hero-copy">
-          <p class="eyebrow reveal">FOREST COMBAT EXPERIENCE</p>
-
-          <h1 class="hero-title reveal">
-            <span class="hero-title-main">SOUTHWOODS</span>
-            <span class="hero-title-sub">TACTICAL FIELD</span>
-          </h1>
-
-          <p class="tagline reveal">FIGHT THROUGH THE FOREST.</p>
-          <p class="tagline-jp reveal">森を制する者が、戦場を制す。</p>
-
-          <div class="hero-actions reveal">
-            <a class="button button-primary" href="#field">ENTER THE FIELD <span>→</span></a>
-            <a class="button button-ghost" href="#reserve">RESERVE NOW</a>
-          </div>
-        </div>
-
-        <aside class="status-card reveal" id="reserve">
-          <div class="status-heading">
-            <span>FIELD STATUS</span>
-            <i aria-hidden="true"></i>
-          </div>
-          <p>公開練習用の架空サイト。予約機能や料金情報はサンプル。</p>
-          <div class="status-grid">
-            <div><strong>450m</strong><span>ALTITUDE</span></div>
-            <div><strong>4</strong><span>ZONES</span></div>
-            <div><strong>40</strong><span>MAX PLAYERS</span></div>
-          </div>
-        </aside>
+      <div class="hero-content reveal">
+        <p class="eyebrow">FOREST COMBAT EXPERIENCE</p>
+        <h1>大自然を、<br><em>攻略せよ。</em></h1>
+        <p class="hero-lead">木々のざわめき。土を蹴る音。仲間の合図。<br>ここでは、山そのものが戦場になる。</p>
+        <div class="hero-actions"><a class="button primary" href="#field">フィールドを見る <span>↘</span></a><a class="button ghost" href="#plan">料金プラン <span>→</span></a></div>
       </div>
-
-      <a class="scroll-cue" href="#field" aria-label="下へスクロール">
-        <span>SCROLL</span><i></i>
-      </a>
+      <div class="hero-meta"><span>ALTITUDE <b>610m</b></span><span>FIELD <b>4 ZONES</b></span><span>CAPACITY <b>40 PLAYERS</b></span></div>
+      <a class="scroll" href="#concept"><span>SCROLL</span><i></i></a>
     </section>
 
-    <section class="section" id="field">
-      <div class="content-shell">
-        <div class="section-heading reveal">
-          <div>
-            <p class="section-kicker">FIELD AREA</p>
-            <h2>TACTICAL ZONES</h2>
-          </div>
-          <p>天然林、斜面、バリケードを組み合わせた架空の山岳フィールド。</p>
-        </div>
+    <section class="intro" id="concept">
+      <div class="section-shell intro-grid">
+        <div class="section-title reveal"><span>01 / CONCEPT</span><h2>遊び場じゃない。<br><em>物語の舞台だ。</em></h2></div>
+        <div class="intro-copy reveal"><p class="large-copy">起伏、樹林、視界、足音。自然が生んだ条件を、そのまま戦術に変える山岳フィールド。</p><p>初心者向けのサポートから経験者のチーム戦まで。それぞれのスタイルで、日常を忘れる一日を。</p></div>
+      </div>
+      <div class="feature-strip section-shell reveal">
+        <article><b>01</b><span>REAL TERRAIN</span><h3>山全体がフィールド</h3><p>人工物だけでは作れない高低差と緊張感。</p></article>
+        <article><b>02</b><span>FULL SUPPORT</span><h3>初心者も安心</h3><p>ルール・装備・安全管理を丁寧にサポート。</p></article>
+        <article><b>03</b><span>GEAR RENTAL</span><h3>手ぶらで参戦</h3><p>必要な装備一式をレンタル可能。</p></article>
+      </div>
+    </section>
 
-        <div class="card-grid">
-          <article class="zone-card reveal">
-            <span class="card-number">01</span>
-            <h3>FOREST ZONE</h3>
-            <p>濃い樹木と短い射線。接近戦と索敵が勝敗を決める。</p>
-          </article>
-          <article class="zone-card reveal">
-            <span class="card-number">02</span>
-            <h3>RIDGE LINE</h3>
-            <p>高低差を利用する尾根エリア。位置取りと連携が重要。</p>
-          </article>
-          <article class="zone-card reveal">
-            <span class="card-number">03</span>
-            <h3>BARRIER BASE</h3>
-            <p>人工遮蔽物を配置した拠点戦向けの戦術エリア。</p>
-          </article>
+    <section class="field-section" id="field">
+      <div class="field-image reveal"><img src="assets/field.webp" alt="森の斜面と木製バリケードがある山岳フィールド"><div class="image-label">TACTICAL MAP / SECTOR 01</div></div>
+      <div class="field-copy reveal"><p class="eyebrow">02 / FIELD AREA</p><h2>地形を読め。<br>先を奪え。</h2><p>濃い森林、見晴らしのいい尾根、攻防が激化するバリケードゾーン。性格の違う4つのエリアが、ゲームの流れを変える。</p>
+        <ol class="zone-list"><li><i>01</i><span><b>FOREST AREA</b>近距離戦と索敵の森</span></li><li><i>02</i><span><b>RIDGE LINE</b>高低差を制する尾根</span></li><li><i>03</i><span><b>BARRIER ZONE</b>戦略的な拠点攻防</span></li><li><i>04</i><span><b>SAFE BASE</b>準備・休憩エリア</span></li></ol>
+      </div>
+    </section>
+
+    <section class="plans" id="plan">
+      <div class="section-shell"><div class="section-title horizontal reveal"><div><span>03 / PLAY PLAN</span><h2>好きな戦い方を選べ。</h2></div><p>下記はデザイン確認用の仮料金。営業開始前に正式情報へ更新予定。</p></div>
+        <div class="plan-grid">
+          <article class="plan-card reveal"><div><small>FULL DAY</small><h3>1日利用</h3><p>朝から夕方まで、たっぷり遊びたい人へ。</p></div><strong>¥3,500<small> / 1名</small></strong><ul><li>9:00–17:00</li><li>フィールド利用</li><li>レンタル装備別</li></ul><a href="#contact" aria-label="1日利用について問い合わせる">→</a></article>
+          <article class="plan-card featured reveal"><div><small>HALF DAY</small><h3>半日利用</h3><p>気軽に体験したい人へ。</p></div><strong>¥2,000<small> / 1名</small></strong><ul><li>午前または午後</li><li>フィールド利用</li><li>初心者説明あり</li></ul><a href="#contact" aria-label="半日利用について問い合わせる">→</a></article>
+          <article class="plan-card reveal"><div><small>PRIVATE FIELD</small><h3>貸切プラン</h3><p>チーム・イベント利用に。</p></div><strong>¥35,000<small>〜 / 1日</small></strong><ul><li>最大40名まで</li><li>フィールド貸切</li><li>装備プラン対応</li></ul><a href="#contact" aria-label="貸切について問い合わせる">→</a></article>
         </div>
       </div>
     </section>
 
-    <section class="section section-alt" id="system">
-      <div class="content-shell">
-        <div class="section-heading reveal">
-          <div>
-            <p class="section-kicker">GAME SYSTEM</p>
-            <h2>PLAY STYLE</h2>
-          </div>
-          <p>料金や営業時間はすべてダミー。見た目を楽しむサンプルページ。</p>
-        </div>
-
-        <div class="price-grid">
-          <article class="price-card reveal">
-            <span>DAY GAME</span>
-            <strong>¥3,500</strong>
-            <p>9:00–17:00</p>
-          </article>
-          <article class="price-card reveal">
-            <span>HALF DAY</span>
-            <strong>¥2,000</strong>
-            <p>午前または午後</p>
-          </article>
-          <article class="price-card reveal">
-            <span>PRIVATE</span>
-            <strong>¥35,000〜</strong>
-            <p>チーム貸切</p>
-          </article>
-        </div>
-      </div>
+    <section class="gallery" id="gallery">
+      <div class="gallery-copy reveal"><p class="eyebrow">04 / FIELD EXPERIENCE</p><h2>森でしか味わえない、<br><em>一瞬がある。</em></h2><p>仲間と動き、息を潜め、勝機をつかむ。写真では伝えきれない緊張と興奮を、この場所で。</p><div class="gallery-controls"><button class="gallery-prev" type="button" aria-label="前の写真">←</button><span><b class="slide-number">01</b> / 03</span><button class="gallery-next" type="button" aria-label="次の写真">→</button></div></div>
+      <div class="gallery-stage reveal"><figure class="gallery-slide active"><img src="assets/gallery.png" alt="森林拠点で連携するサバイバルゲーム参加者"><figcaption>TEAM TACTICS</figcaption></figure><figure class="gallery-slide"><img src="southwoods-hero.webp" alt="森林を進むサバイバルゲーム参加者"><figcaption>FOREST MISSION</figcaption></figure><figure class="gallery-slide"><img src="assets/field.webp" alt="山岳サバイバルゲームフィールド"><figcaption>WILD TERRAIN</figcaption></figure></div>
     </section>
 
-    <section class="section news-section" id="news">
-      <div class="content-shell news-panel reveal">
-        <div class="news-label">FIELD NEWS</div>
-        <div class="news-list">
-          <p><time>2026.07.11</time><span>最初のサンプルサイトを公開</span></p>
-          <p><time>2026.07.12</time><span>スマホ専用レイアウトへ更新</span></p>
-          <p><time>COMING SOON</time><span>モルコの秘密ページへリンク予定</span></p>
-        </div>
-      </div>
-    </section>
+    <section class="contact" id="contact"><div class="contact-bg"></div><div class="section-shell contact-inner reveal"><p class="eyebrow">READY FOR THE MISSION?</p><h2>次の週末を、<br>作戦日に。</h2><p>現在は開業準備中のコンセプトサイト。予約受付・所在地・正式料金は決まり次第お知らせする。</p><a class="button primary" href="mailto:example@example.com">問い合わせる <span>→</span></a></div></section>
   </main>
 
-  <footer>
-    <div class="content-shell">© 2026 SOUTHWOODS TACTICAL FIELD — SAMPLE PROJECT</div>
-  </footer>
+  <footer><div class="footer-brand"><span class="brand-emblem">M</span><span><b>MOUNTAIN</b><b>STRIKE FIELD</b></span></div><p>山を楽しみ、本気で遊ぶ。</p><small>© 2026 MOUNTAIN STRIKE FIELD — CONCEPT PROJECT</small></footer>
 </body>
 </html>
